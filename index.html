@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>ITVDN</title>
+    <link href="./styles/main.css" rel="stylesheet">
+    <link href="./styles/formForgot.css" rel="stylesheet">
+    <link href="styles/formCreate.css" rel="stylesheet">
+
+    <link href="./styles/responsive/main.css" rel="stylesheet">
+    <link href="styles/responsive/formForgot.css" rel="stylesheet">
+    <link href="styles/responsive/formCreate.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <div class="blockForForms">
+        <form action="https://github.com/Korneliia08" class="formLogIn" name="formLogIn">
+            <h1 class="titleForm">Member Login</h1>
+            <input class="emailInput" name="emailInput" pattern="((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])"
+                   placeholder="E-mail"
+                   required type="email">
+            <input class="passwordInput" name="passwordInput" placeholder="Password" required type="password">
+            <a class="aForgotEmailPassword" href="#">Forgot Your e-mail or password?</a>
+            <a class="aCreateAccount" href="#">Create Your account</a>
+            <input class="inputSubmit" type="submit" value="Log In">
+        </form>
+        <form class="formForgot" name="formForgot">
+            <h1 class="titleForm">Change password</h1>
+            <input class="emailInput" pattern="((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])" placeholder="E-mail"
+                   required
+                   type="email">
+            <input class="passwordInput" name="inputNewPassword" placeholder="Enter new password" required
+                   type="password">
+            <input class="passwordInput" name="inputConfirmPassword" placeholder="Confirm password" required
+                   type="password">
+            <input class="inputSubmit" name="inputChange" type="submit" value="Change">
+        </form>
+        <form class="formCreate" name="formCreateNewAccount">
+            <h1 class="titleForm">Create a new account</h1>
+        </form>
+    </div>
+
+</main>
+<script src="scripts/main.js"></script>
+</body>
+</html>
