@@ -1,16 +1,16 @@
-body main .formCreate {
-    background-color: #790c0c;
-    position: relative;
-    right: 20px;
-    top: 20px;
-    z-index: 2;
-    display: none;
-    padding: 40px;
-    flex-direction: column;
-    row-gap: 10px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 4px 4px 40px 2px black, -1px -1px 5px 0px #c6c6c6,
-    0px 0px 70px -25px inset #000000f5, 0px 0px 5px 1px inset #ffffffa1;
+@media (max-width: 780px) {
+    body main .formCreate {
+        right: 5px;
+        top: 65px;
+        padding: 20px;
+        position: absolute;
+    }
 }
+
+
+@media (max-width: 320px) {
+    body main .formCreate {
+        padding: 18px;
+    }
+}
+

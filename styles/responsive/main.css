@@ -1,0 +1,14 @@
+@media (max-width: 780px) {
+    .titleMadeByKorneliia {
+        font-size: 19px;
+        margin-top: 65px;
+    }
+}
+
+@media (max-width: 300px) {
+    .titleMadeByKorneliia {
+        padding: 2px;
+        font-size: 12px;
+        margin-top: 65px;
+    }
+}

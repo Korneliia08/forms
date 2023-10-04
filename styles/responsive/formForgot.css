@@ -1,0 +1,48 @@
+@media (max-width: 780px) {
+    body main .formForgot {
+        right: 5px;
+        top: 90px;
+        padding: 20px;
+        position: absolute;
+    }
+
+    body main .formHidden {
+        padding: 20px;
+        transform: rotate(-10deg);
+    }
+
+    .titleForm {
+        font-size: 22px;
+    }
+
+}
+
+
+@media (max-width: 320px) {
+    body main .formForgot {
+        padding: 18px;
+    }
+
+    body main .formHidden {
+        padding: 18px;
+    }
+
+    .titleForm {
+        font-size: 19px;
+    }
+
+    .styleInput {
+        width: 145px;
+    }
+
+    .passwordInput {
+        width: 145px;
+    }
+
+    .inputSubmit {
+        width: 100px;
+    }
+
+}
+
+

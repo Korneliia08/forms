@@ -19,7 +19,7 @@
     <div class="blockForForms">
         <form action="https://github.com/Korneliia08" class="formLogIn" name="formLogIn">
             <h1 class="titleForm">Member Login</h1>
-            <input class="emailInput" name="emailInput" pattern="((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])"
+            <input class="styleInput" name="emailInput" pattern="((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])"
                    placeholder="E-mail"
                    required type="email">
             <input class="passwordInput" name="passwordInput" placeholder="Password" required type="password">
@@ -29,7 +29,7 @@
         </form>
         <form class="formForgot" name="formForgot">
             <h1 class="titleForm">Change password</h1>
-            <input class="emailInput" pattern="((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])" placeholder="E-mail"
+            <input class="styleInput" pattern="((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])" placeholder="E-mail"
                    required
                    type="email">
             <input class="passwordInput" name="inputNewPassword" placeholder="Enter new password" required
@@ -39,10 +39,21 @@
             <input class="inputSubmit" name="inputChange" type="submit" value="Change">
         </form>
         <form class="formCreate" name="formCreateNewAccount">
-            <h1 class="titleForm">Create a new account</h1>
+            <h1 class="titleForm">Create Your account</h1>
+            <input class="styleInput" placeholder="Name"
+                   required
+                   type="text">
+            <input class="styleInput" pattern="((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])" placeholder="E-mail"
+                   required
+                   type="email">
+            <input class="passwordInput" name="inputNewPassword" placeholder="Enter password" required
+                   type="password">
+            <input class="passwordInput" name="inputConfirmPassword" placeholder="Confirm password" required
+                   type="password">
+            <input class="inputSubmit" name="inputCreate" type="submit" value="Create">
         </form>
     </div>
-
+    <h5 class="titleMadeByKorneliia">Made By &copyKorneliia</h5>
 </main>
 <script src="scripts/main.js"></script>
 </body>
