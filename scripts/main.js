@@ -4,15 +4,29 @@ let formCreateNewAccount = document.querySelector("form[name='formCreateNewAccou
 
 let inputNewPassword = document.querySelector("input[name='inputNewPassword']");
 let inputConfirmPassword = document.querySelector("input[name='inputConfirmPassword']");
-let inputCreate = document.querySelector("input[name='inputCreate']");
 
-// formForgot.addEventListener("change", checkPassword);
+let emailInput = document.querySelector("input[name='emailInput']");
+let passwordInput = document.querySelector("input[name='passwordInput']");
+
+let titleClose = document.querySelectorAll(".titleClose");
+inputConfirmPassword.addEventListener("input", (event) => {
+    checkPasswords();
+})
+
+function checkPasswords() {
+    if (inputNewPassword.value !== inputConfirmPassword.value) {
+        inputConfirmPassword.setCustomValidity("Different passwords! Try again");
+    } else {
+        inputConfirmPassword.setCustomValidity("");
+    }
+}
 
 formForgot.addEventListener("submit", () => {
     formForgot.style.display = "none";
     formLogIn.classList.toggle("formLogInHidden");
 })
 formCreateNewAccount.addEventListener("submit", () => {
+    console.log(emailInput);
     formCreateNewAccount.style.display = "none";
     formLogIn.classList.toggle("formHidden");
 })
@@ -20,25 +34,25 @@ formCreateNewAccount.addEventListener("submit", () => {
 
 let aForgotEmailPassword = document.querySelector(".aForgotEmailPassword");
 aForgotEmailPassword.addEventListener("click", (event) => {
+    emailInput.value = "";
+    passwordInput.value = "";
     formForgot.style.display = "flex";
     formLogIn.classList.add("formHidden");
 })
 
 let aCreateAccount = document.querySelector(".aCreateAccount");
 aCreateAccount.addEventListener("click", (event) => {
+    emailInput.value = "";
+    passwordInput.value = "";
     formCreateNewAccount.style.display = "flex";
     formLogIn.classList.add("formHidden");
 })
 
-
-// function checkPassword(event) {
-//     let nameOfInput = event.target.name;
-//     if (nameOfInput === "inputNewPassword" || nameOfInput === "inputConfirmPassword") {
-//
-//     }
-// }
-
-
-
-
+titleClose.forEach(title => {
+    title.addEventListener("click", (event) => {
+        formForgot.style.display = "none";
+        formCreateNewAccount.style.display = "none";
+        formLogIn.classList.toggle("formHidden");
+    })
+})
 

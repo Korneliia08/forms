@@ -6,8 +6,13 @@
         position: absolute;
     }
 
-    body main .formHidden {
+    body main .formLogIn {
+
         padding: 20px;
+    }
+
+    body main .formHidden {
+
         transform: rotate(-10deg);
     }
 

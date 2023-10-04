@@ -128,5 +128,22 @@ body main .formLogIn a:hover {
     text-shadow: 1px 1px 4px #0f0f00;
 }
 
+.titleClose {
+    text-decoration: underline;
+    color: #ece12e;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    text-shadow: 0px 1px 1px black;
+}
+
+.titleClose:hover {
+    cursor: pointer;
+    color: #d3c707;
+}
+
+.titleClose:focus {
+    color: #ad9106;
+}
+
 
 
