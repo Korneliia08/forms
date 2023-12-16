@@ -7,5 +7,9 @@
 * it is a responsive page
 
 ## 📷 Preview
-![image: timer](https://github.com/Korneliia08/timer/blob/master/assets/images/timer.png)
-![image:timer](https://github.com/Korneliia08/timer/blob/master/assets/images/timerPhoto.png)
+### Forms
+![image: forms](https://github.com/Korneliia08/forms/blob/master/assets/images/form.png)
+### change password
+![image:change password](https://github.com/Korneliia08/forms/blob/master/assets/images/changePassword.png)
+### create account
+![image:create account](https://github.com/Korneliia08/forms/blob/master/assets/images/createAccount.png)
